@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ms-dal-talks
+  labels:
+    app: ms-dal-talks
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-dal-talks
+  template:
+    metadata:
+      labels:
+        app: ms-dal-talks
+    spec:
+      containers:
+      #---------------------------------------- [CONTAINER: srv-measurement]  -------------------------------#
+      - name: ms-dal-talks
+        image: gcr.io/kubernetes-101-227215/ms-dal-talks:v1.0.0
+        ports:
+        - name: ms-dal-talks
+          containerPort: 9092
+          protocol: TCP

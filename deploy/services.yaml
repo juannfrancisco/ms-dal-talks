@@ -1,0 +1,16 @@
+## EXPOSE
+kind: Service
+apiVersion: v1
+metadata:
+  name: ms-dal-talks-svc
+spec:
+  selector:
+    app: ms-dal-talks
+  type: NodePort
+  ports:
+  #---------------------------------------- [CONTAINER PORT: srv-measurement]  -------------------------------#
+  - name: ms-dal-talks
+    protocol: TCP
+    nodePort: 30192
+    port: 9092
+    targetPort: 9092
