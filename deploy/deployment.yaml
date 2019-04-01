@@ -15,7 +15,7 @@ spec:
         app: ms-dal-talks
     spec:
       containers:
-      #---------------------------------------- [CONTAINER: srv-measurement]  -------------------------------#
+      #---------------------------------------- [CONTAINER:]  -------------------------------#
       - name: ms-dal-talks
         image: gcr.io/kubernetes-101-227215/ms-dal-talks:latest
         ports:
