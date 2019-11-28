@@ -8,7 +8,7 @@ spec:
     app: ms-dal-talks
   type: NodePort
   ports:
-  #---------------------------------------- [CONTAINER PORT: srv-measurement]  -------------------------------#
+  #---------------------------------------- [CONTAINER PORT]  -------------------------------#
   - name: ms-dal-talks
     protocol: TCP
     nodePort: 30192

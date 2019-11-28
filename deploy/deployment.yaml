@@ -17,7 +17,7 @@ spec:
       containers:
       #---------------------------------------- [CONTAINER:]  -------------------------------#
       - name: ms-dal-talks
-        image: gcr.io/kubernetes-101-227215/ms-dal-talks:latest
+        image: gcr.io/PROJECT_ID/ms-dal-talks:latest
         ports:
         - name: ms-dal-talks
           containerPort: 9092

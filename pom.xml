@@ -82,12 +82,7 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>0.9.9</version>
-                <configuration>
-                    <to>
-                        <image>gcr.io/kubernetes-101-227215/ms-dal-talks</image>
-                    </to>
-                </configuration>
+                <version>1.8.0</version>
             </plugin>
         </plugins>
     </build>
